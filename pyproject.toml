@@ -14,7 +14,7 @@ line_length = 88
 
 
 [tool.poetry]
-name = "iambic-plugin-generic-git-provider-integration"
+name = "iambic-plugin-generic-git-provider"
 packages = [
     { include="iambic", from="." },
 ]

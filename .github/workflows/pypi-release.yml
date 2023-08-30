@@ -3,7 +3,7 @@ on:
   workflow_dispatch
 jobs:
   build-n-publish:
-    if: ${{ github.repository == 'noqdev/iambic-plugin-generic-git-provider-integration' }}
+    if: ${{ github.repository == 'noqdev/iambic-plugin-generic-git-provider' }}
     name: Build and publish Python 🐍 distributions 📦 to PyPI
     runs-on: ubuntu-latest
     steps:
