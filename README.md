@@ -1,6 +1,18 @@
 # iambic-plugin-generic-git-provider
 Run iambic in a AWS lambda function with any generic git provider
 
+This plugin provides an entry point for AWS Lambda to to invoke
+the function `run_handler` to run IAMbic import functionality
+against a configured git repository checked out via https.
+
+Typically AWS Lambda requires either layer or container image
+to use external dependency. One has to build a container image
+with this plugin along with IAMbic core.
+
+To ease adoption, the official IAMbic container image wll
+include this plugin, so users do not have to build their own
+containers.
+
 # initial design
 
 # CEP 004 - Generic Git Provider Support
