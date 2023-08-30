@@ -146,6 +146,7 @@ def workflow_wrapper(workflow_func: Callable, ux_op_name: str) -> Callable:
         except Exception as e:
             captured_traceback = traceback.format_exc()
             log.error("fault", exception=captured_traceback)
+            temp_dir = None
             try:
                 temp_dir = tempfile.mkdtemp(suffix=None, prefix=None, dir=None)
                 with open(f"{temp_dir}/crash.txt", "w") as f:
